@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReviewingFilters.best | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fade-up { animation: fadeUp 0.6s ease-out forwards; opacity: 0; }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 30px -5px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body class="bg-white text-slate-900 font-sans">
+
+    <nav class="bg-white sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-6 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-black tracking-tight flex items-center gap-2">
+                <i class="fas fa-filter text-indigo-600"></i> ReviewingFilters<span class="text-indigo-600">.best</span>
+            </a>
+            <div class="hidden md:flex space-x-8 font-medium text-sm text-slate-600">
+                <a href="index.html" class="text-indigo-600 font-bold">Home</a>
+                <a href="rankings.html" class="hover:text-indigo-600 transition">Rankings</a>
+                <a href="compare.html" class="hover:text-indigo-600 transition">Compare</a>
+                <a href="contact.html" class="hover:text-indigo-600 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-slate-600"><i class="fas fa-bars fa-lg"></i></button>
+        </div>
+    </nav>
+
+    <header class="relative overflow-hidden bg-white">
+        <div class="container mx-auto px-6 py-20 relative z-10 text-center animate-fade-up">
+            <span class="bg-indigo-50 text-indigo-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-6 inline-block">2026 Edition</span>
+            <h1 class="text-5xl md:text-7xl font-black text-slate-900 mb-6 tracking-tight">
+                Web filtering,<br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">simplified.</span>
+            </h1>
+            <p class="text-xl text-slate-500 mb-10 max-w-2xl mx-auto">
+                Unbiased reviews and performance benchmarks for the world's top web security gateways.
+            </p>
+            
+            <div class="flex justify-center gap-4">
+                <a href="rankings.html" class="bg-indigo-600 text-white px-8 py-3 rounded-full font-bold hover:bg-indigo-700 transition shadow-lg shadow-indigo-100">View Rankings</a>
+                <a href="compare.html" class="bg-white text-slate-700 border border-slate-200 px-8 py-3 rounded-full font-bold hover:border-indigo-600 hover:text-indigo-600 transition">Compare Tools</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-white py-12">
+        <h2 class="text-3xl md:text-4xl font-black text-center text-slate-900 animate-fade-up">
+            What we review
+        </h2>
+    </div>
+
+    <section class="container mx-auto px-6 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="bg-white p-8 rounded-2xl card-hover transition duration-300 animate-fade-up delay-100">
+                <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-6">
+                    <i class="fas fa-cloud fa-lg"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Cloud Proxies (SSE)</h3>
+                <p class="text-slate-500 mb-6 leading-relaxed">Full inspection without the hardware. Perfect for remote workforces and heavy SSL/TLS traffic.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-[10px] font-bold uppercase bg-slate-50 px-2 py-1 rounded text-slate-500">DLP Support</span>
+                    <span class="text-[10px] font-bold uppercase bg-slate-50 px-2 py-1 rounded text-slate-500">Zero Trust</span>
+                    <span class="text-[10px] font-bold uppercase bg-slate-50 px-2 py-1 rounded text-slate-500">CASB</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl card-hover transition duration-300 animate-fade-up delay-200">
+                <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center text-purple-600 mb-6">
+                    <i class="fas fa-network-wired fa-lg"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">DNS Filtering</h3>
+                <p class="text-slate-500 mb-6 leading-relaxed">Lightweight blocking at the domain layer. Low latency and fast global deployment for any device.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-[10px] font-bold uppercase bg-slate-50 px-2 py-1 rounded text-slate-500">Low Latency</span>
+                    <span class="text-[10px] font-bold uppercase bg-slate-50 px-2 py-1 rounded text-slate-500">Global Anycast</span>
+                    <span class="text-[10px] font-bold uppercase bg-slate-50 px-2 py-1 rounded text-slate-500">Fast Setup</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl card-hover transition duration-300 animate-fade-up delay-200">
+                <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center text-green-600 mb-6">
+                    <i class="fas fa-school fa-lg"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">K-12 Education</h3>
+                <p class="text-slate-500 mb-6 leading-relaxed">CIPA compliant filters for schools. Includes classroom management and student safety monitoring.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-[10px] font-bold uppercase bg-green-50 px-2 py-1 rounded text-green-700">CIPA Ready</span>
+                    <span class="text-[10px] font-bold uppercase bg-green-50 px-2 py-1 rounded text-green-700">AI Safety</span>
+                    <span class="text-[10px] font-bold uppercase bg-green-50 px-2 py-1 rounded text-green-700">Chromebooks</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
